@@ -1,0 +1,260 @@
+바이브코딩_기술스택
+
+추천
+Next.js + TypeScript + Tailwind CSS + shadcn/ui + Supabase + Vercel
+
+Next.js + TypeScript + Tailwind CSS + shadcn/ui + FastAPI + PostgreSQL
+
+
+JavaScript / TypeScript
+└─ Node.js
+   ├─ Express
+   ├─ NestJS
+   └─ Next.js
+      └─ React
+
+React 단독 조합
+JavaScript / TypeScript
+└─ React
+   └─ Vite
+
+
+
+
+계층 관계 표 
+| 구분         | 정체        | 종속 관계                        | 설명                             |
+| ---------- | --------- | ---------------------------- | ------------------------------ |
+| JavaScript | 언어        | 최상위                          | 웹 개발의 기본 언어                    |
+| TypeScript | 언어        | JavaScript 기반                | JavaScript에 타입을 추가한 언어         |
+| Node.js    | 실행 환경     | JavaScript 실행                | JavaScript/TypeScript를 서버에서 실행 |
+| React      | UI 라이브러리  | JavaScript/TypeScript 사용     | 화면 컴포넌트를 만드는 도구                |
+| Vite       | 개발/빌드 도구  | React와 함께 사용 가능              | React 앱을 빠르게 실행/빌드             |
+| Next.js    | 웹 프레임워크   | React 기반, Node.js 환경에서 주로 실행 | React + 라우팅 + 서버 기능 + 배포 최적화   |
+| Express    | 백엔드 프레임워크 | Node.js 기반                   | 가벼운 API 서버 제작                  |
+| NestJS     | 백엔드 프레임워크 | Node.js 기반                   | 구조적인 API 서버 제작                 |
+| Supabase   | BaaS      | 독립 서비스                       | DB, 로그인, 파일 저장 제공              |
+| Vercel     | 배포 플랫폼    | 독립 서비스                       | React/Next.js 앱 배포             |
+
+
+
+
+
+쉽게 말한 관계
+| 질문                      | 답                                     |
+| ----------------------- | ------------------------------------- |
+| React는 언어인가?            | 아니요. 화면 만드는 라이브러리                     |
+| Next.js는 언어인가?          | 아니요. React 기반 웹 프레임워크                 |
+| Node.js는 언어인가?          | 아니요. JavaScript 실행 환경                 |
+| Vite는 언어인가?             | 아니요. 개발/빌드 도구                         |
+| NestJS는 Node.js랑 다른가?   | 네. NestJS는 Node.js 위에서 동작하는 백엔드 프레임워크 |
+| Next.js와 React는 비슷한가?   | 계열은 같지만 Next.js가 더 큰 개념               |
+| Next.js 안에 React가 들어가나? | 네                                     |
+| React 앱에 Vite가 꼭 필요한가?  | 필수는 아니지만 보통 많이 씀                      |
+
+
+
+
+
+
+React로 갈 때 구조
+TypeScript
+└─ React
+   ├─ React Router
+   ├─ TanStack Query
+   ├─ Tailwind CSS
+   ├─ shadcn/ui
+   └─ Vite
+
+| 역할        | 기술             |
+| --------- | -------------- |
+| 언어        | TypeScript     |
+| 화면        | React          |
+| 페이지 이동    | React Router   |
+| 서버 데이터 관리 | TanStack Query |
+| 스타일       | Tailwind CSS   |
+| UI 부품     | shadcn/ui      |
+| 실행/빌드     | Vite           |
+| DB/로그인    | Supabase       |
+| 배포        | Vercel         |
+
+
+
+
+Next.js로 갈 때 구조
+TypeScript
+└─ Next.js
+   ├─ React
+   ├─ Routing
+   ├─ Server Actions
+   ├─ API Routes
+   ├─ Tailwind CSS
+   └─ shadcn/ui
+
+| 역할     | 기술                          |
+| ------ | --------------------------- |
+| 언어     | TypeScript                  |
+| 화면     | React                       |
+| 프레임워크  | Next.js                     |
+| 페이지 이동 | Next.js 기본 라우팅              |
+| 서버 기능  | API Routes / Server Actions |
+| 스타일    | Tailwind CSS                |
+| UI 부품  | shadcn/ui                   |
+| DB/로그인 | Supabase                    |
+| 배포     | Vercel                      |
+이 조합은 FullStack WebApp에 더 가깝습니다.
+
+
+
+가장 중요한 차이
+| 비교           | 의미                   |
+| ------------ | -------------------- |
+| React        | 화면만 담당               |
+| React + Vite | 화면 중심 앱 개발           |
+| Next.js      | React를 포함한 웹앱 프레임워크  |
+| Node.js      | 서버에서 JS 실행           |
+| NestJS       | Node.js 기반 백엔드 프레임워크 |
+| Supabase     | 백엔드 기능을 대신 제공하는 서비스  |
+
+
+
+
+
+
+Python 백엔드를 붙이면 구조가 이렇게 바뀝니다
+Next.js + TypeScript
+↓
+Python Backend
+↓
+Supabase PostgreSQL
+
+
+추천 조합은 보통 이겁니다.
+Next.js
++ TypeScript
++ Tailwind CSS
++ shadcn/ui
++ FastAPI
++ PostgreSQL 또는 Supabase DB
++ Vercel / Render / Railway / Fly.io
+여기서 FastAPI가 Python 백엔드 프레임워크입니다.
+
+
+Python 백엔드가 필요한 경우
+AI 기능
+크롤링
+데이터 분석
+엑셀/CSV 대량 처리
+복잡한 서버 로직
+외부 API 연동
+예약 작업
+관리자 배치 작업
+
+
+정리
+| 상황               | 추천                 |
+| ---------------- | ------------------ |
+| 빠르게 WebApp 만들기   | Next.js + Supabase |
+| 백엔드 없이 로그인/DB 쓰기 | Supabase           |
+| AI/데이터/파일처리 필요   | Python FastAPI     |
+| 백엔드 구조 제대로 배우기   | FastAPI 또는 NestJS  |
+| JS/TS 하나로 통일     | Next.js + NestJS   |
+| Python 생태계 활용    | Next.js + FastAPI  |
+
+
+
+
+
+결론은:
+
+Next.js + TypeScript + Tailwind + shadcn/ui + Supabase + Vercel
+
+은 초기 FullStack 조합이고,
+
+Next.js + TypeScript + FastAPI + PostgreSQL
+
+은 프론트/백엔드 분리형 FullStack 조합이라고 보면 됩니다.
+
+
+
+
+
+
+
+
+======================================================================================================================================================
+
+
+Database
+
+PostgreSQL, MS-SQL 전용 작명 컨벤션
+모든 이름을 소문자로 작성, snake_case
+SQL 예약어를 이름으로 쓰기 금지
+Table Name : prefix = t_
+View Name : prefix = v_
+Stored Procedure Name : prefix = [데이터베이스명약어]_ (예: monitoring_survey_verification = msv_)
+Function Name : prefix = f_
+
+
+Table의 Primary Key : id로 명명 하고, 각 Database 숫자타입중 가장큰 타입, 자동증가 형식 다른 Table에서 Foreign Key 형식으로 참조할때는 참조테이블명_id
+절대 Foreign Key는 만들지 않는다.
+Stored Procedure 에서 join으로 id가 여러번 호출 될때에도 "as 테이블명_id" 이렇게 사용 한다.
+Timestamp/Date : _at
+반드시 모든 Table에 "삭제여부 : delete_yn, 생성일시 : create_at, 수정일시 : update_at" 을 추가 한다.
+제약 조건 작명 (Constraints - Optional)
+시스템 자동 생성을 쓰지 않고 명시할 경우 다음 규칙을 따릅니다.
+PK: pk_ + 테이블명 (예: pk_t_users)
+FK: fk_ + 본테이블 + _ + 참조테이블 (예: fk_t_orders_t_users)
+Unique: uk_ + 테이블명 + _ + 컬럼명 (예: uk_t_users_email)
+Index: idx_ + 테이블명 + _ + 컬럼명 (예: idx_t_users_last_name)
+
+
+
+Web Application
+
+1. Modern Productivity (Python + React + Tailwind)
+가장 추천하는 현대적인 풀스택 조합입니다. 스타일링과 비즈니스 로직 모두 생산성에 초점이 맞춰져 있습니다.
+
+Frontend: React (Next.js 권장) + Tailwind CSS
+
+Backend: FastAPI (Python)
+
+Database: PostgreSQL
+
+시너지 효과:
+
+Tailwind의 Utility-first 방식은 디자인 파일 없이도 코딩 중에 즉시 UI를 구성할 수 있게 해줍니다.
+
+FastAPI의 자동 API 문서화(Swagger)와 Tailwind의 직관적인 클래스명이 결합되어 개발 생산성이 극대화됩니다.
+
+2. Robust Fullstack (C# + Tailwind)
+ASP.NET MVC 환경에서도 Tailwind를 충분히 활용할 수 있습니다. 기존의 무거운 CSS 프레임워크(Bootstrap 등)를 대체하여 훨씬 세련된 UI를 만들 수 있습니다.
+
+Frontend: Razor View (ASP.NET MVC) + Tailwind CSS
+
+Backend: ASP.NET MVC (C#)
+
+Database: MS-SQL
+
+시너지 효과:
+
+Razor View(.cshtml) 파일 내에서 Tailwind 클래스를 직접 사용하여, 별도의 복잡한 CSS 파일을 관리할 필요가 없어집니다.
+
+빌드 도구(PostCSS 등)를 통해 사용하지 않는 CSS를 제거하면 결과물 용량이 매우 가벼워집니다.
+
+3. High-End Enterprise (C# API + React + Tailwind)
+안정적인 데이터 처리와 화려한 클라이언트 UI가 모두 필요한 경우입니다.
+
+Frontend: React + Tailwind CSS + Headless UI
+
+Backend: ASP.NET Web API (C#)
+
+Database: MS-SQL 또는 PostgreSQL
+
+시너지 효과:
+
+Headless UI나 Radix UI 같은 라이브러리를 Tailwind와 함께 사용하면, 접근성이 보장된 고성능 컴포넌트를 빠르게 제작할 수 있습니다.
+
+대규모 프로젝트에서 일관된 디자인 시스템(Design System)을 유지하기에 가장 유리한 구조입니다.
+
+
+모든 출력/질문/응답은 한글로 번역해서 보여준다. 문서 작성도 모두다 한글로 번역해서 작성한다. 부득이한 경우는 영문을 그대로 쓰돼, 한글 주석을 달아서 가독성을 높인다.

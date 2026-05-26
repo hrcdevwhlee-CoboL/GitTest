@@ -1,0 +1,150 @@
+Web Design
+
+Next.js + TypeScript + Tailwind CSS + shadcn/ui + FastAPI + PostgreSQL
+
+Tailwind CSS
++ shadcn/ui
++ v0.dev
++ Figma 참고
++ Claude Code로 컴포넌트화
+
+
+
+로그인 화면
+	가운데 카드
+	로고/타이틀
+	아이디 입력
+	비밀번호 입력
+	로그인 버튼
+	회원가입 링크
+
+관리자 목록 화면
+	상단 제목
+	검색 영역
+	필터
+	등록 버튼
+	테이블
+	페이지네이션
+
+상세 화면
+	상단 제목
+	정보 카드
+	수정/삭제 버튼
+	탭
+	하단 저장 버튼
+
+대시보드
+	상단 통계 카드 4개
+	차트
+	최근 데이터 테이블
+	알림 영역
+
+디자인을 “예쁘게” 하려고 하지 말고,
+먼저 이런 화면 패턴을 계속 재사용하면 됩니다.
+
+
+
+
+Claude Code에 시킬 때는 이렇게 말하면 좋음
+
+Next.js + TypeScript + Tailwind CSS + shadcn/ui 기준으로 관리자 대시보드 화면을 만들어줘.
+
+조건:
+- 좌측 사이드바
+- 상단 헤더
+- 통계 카드 4개
+- 검색 가능한 테이블
+- 등록 버튼
+- 반응형
+- 색상은 흰색/회색/파란색 계열
+- 컴포넌트는 분리
+- 더미 데이터 포함
+
+
+
+Claude Code용 디자인 프롬프트 템플릿
+
+Next.js App Router + TypeScript + Tailwind CSS + shadcn/ui 기준으로 화면을 만들어줘.
+
+화면 목적:
+[예: 게시글 목록 관리 페이지]
+
+레이아웃:
+- 좌측 사이드바
+- 상단 헤더
+- 본문은 max-w-7xl
+- 카드 기반 레이아웃
+
+포함 요소:
+- 페이지 제목
+- 설명 텍스트
+- 검색 input
+- 필터 select
+- 주요 action button
+- table
+- badge
+- pagination
+- dialog modal
+
+디자인 톤:
+- 깔끔한 SaaS 관리자 스타일
+- 흰색 배경
+- 연한 gray border
+- rounded-2xl
+- shadow-sm
+- 여백 넉넉하게
+- 모바일 반응형
+
+코드 조건:
+- shadcn/ui 컴포넌트 사용
+- 임시 더미 데이터 포함
+- 컴포넌트 분리
+- 불필요한 라이브러리 추가 금지
+
+
+
+
+추천 디자인 방향
+
+바이브코딩이면 이런 스타일이 제일 안정적입니다.
+
+SaaS 관리자 대시보드 스타일
+
+특징은:
+
+흰 배경
+연한 회색 border
+카드형 영역
+둥근 모서리
+적당한 그림자
+상단 통계 카드
+좌측 사이드바
+테이블 중심
+
+이 스타일은 실패 확률이 낮습니다.
+
+
+
+
+참고할 만한 디자인 소스
+shadcn/ui blocks
+Tailwind UI 예제
+v0.dev
+dribbble
+mobbin
+figma community
+
+특히 v0.dev는 Next.js + Tailwind + shadcn/ui 코드 생성에 잘 맞습니다.
+디자인 초안을 v0에서 만들고, Claude Code로 프로젝트에 붙이는 방식이 좋습니다.
+
+
+
+Claude Code에게 이렇게 역할을 주면 좋음
+
+너는 Next.js, Tailwind CSS, shadcn/ui 기반의 SaaS 관리자 UI 전문 프론트엔드 개발자야.
+내 프로젝트의 디자인 시스템을 일관성 있게 유지하면서 화면을 만들어줘.
+
+그리고 매번 이렇게 요구하면 됩니다.
+
+기존 컴포넌트 스타일과 일관되게 만들어줘.
+새로운 색상 체계 만들지 말고 기존 primary, muted, border 기준으로 만들어줘.
